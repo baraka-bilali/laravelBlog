@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CategorieController;
 use App\Models\Categorie;
 use Illuminate\Support\Facades\Route;
@@ -27,3 +28,9 @@ Route::get('/dashboard', function () {
 
 Route::resource('categories', CategorieController::class);
 require __DIR__.'/auth.php';
+
+
+Route::resource('articles', ArticleController::class);
+
+
+

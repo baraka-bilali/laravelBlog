@@ -26,6 +26,7 @@
                         <td>{{ $item->created_at }}</td>
                         <td>{{ $item->name }}</td>
                         <td>{{ $item->description }}</td>
+                        <td>{{ $item->categorie->name }}</td>
                         <td>
                             <div class="dropdown">
                                 <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -82,7 +83,7 @@
         </script>
     </x-slot>
 
-    <
+
 
 </x-app-layout>
 
